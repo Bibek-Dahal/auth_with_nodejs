@@ -4,7 +4,9 @@ const router = express.Router()
 import authMiddleware from '../middlewares/authMiddleware.js'
 import User from '../models/User.js'
 
+
 router.get('',[authMiddleware,ProfileController.profile])
+router.post('/validate',[ProfileController.joiVlaidation])
 
 
 

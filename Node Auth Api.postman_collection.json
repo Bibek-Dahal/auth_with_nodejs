@@ -23,7 +23,7 @@
 					"urlencoded": [
 						{
 							"key": "first_name",
-							"value": "bibek",
+							"value": "manjil",
 							"type": "text"
 						},
 						{
@@ -33,11 +33,16 @@
 						},
 						{
 							"key": "email",
-							"value": "bibek@gmail.com",
+							"value": "manjil@gmail.com",
 							"type": "text"
 						},
 						{
 							"key": "password",
+							"value": "Admin@12",
+							"type": "text"
+						},
+						{
+							"key": "repeat_password",
 							"value": "Admin@12",
 							"type": "text"
 						}
@@ -81,7 +86,7 @@
 						},
 						{
 							"key": "password",
-							"value": "Admin@12",
+							"value": "Admin@123",
 							"type": "text"
 						}
 					]
@@ -153,17 +158,17 @@
 					"urlencoded": [
 						{
 							"key": "old_password",
-							"value": "Admin@12",
+							"value": "Admin@123",
 							"type": "text"
 						},
 						{
 							"key": "new_password",
-							"value": "Admin@123",
+							"value": "Admin@12",
 							"type": "text"
 						},
 						{
-							"key": "confirm_password",
-							"value": "Admin@123",
+							"key": "repeat_password",
+							"value": "Admin@12",
 							"type": "text"
 						}
 					]
@@ -233,18 +238,18 @@
 					"urlencoded": [
 						{
 							"key": "new_password",
-							"value": "Admin@12",
+							"value": "Admin@123",
 							"type": "text"
 						},
 						{
-							"key": "confirm_password",
-							"value": "Admin@12",
+							"key": "repeat_password",
+							"value": "Admin@123",
 							"type": "text"
 						}
 					]
 				},
 				"url": {
-					"raw": "127.0.0.1:8000/api/password-reset/NjJjODFjMzM2ZTRhMTk0YzM0ZDgyYjdj/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYzgxYzMzNmU0YTE5NGMzNGQ4MmI3YyIsImlhdCI6MTY1NzI4MTc3MCwiZXhwIjoxNjU3NzEzNzcwfQ.efn0MinzzQZ-YGlpW2ssryj-yTlUFdPa6dx87cZ_-JM",
+					"raw": "127.0.0.1:8000/api/password-reset/NjJjODFjMzM2ZTRhMTk0YzM0ZDgyYjdj/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYzgxYzMzNmU0YTE5NGMzNGQ4MmI3YyIsImlhdCI6MTY1NzMwMDAyMSwiZXhwIjoxNjU3NzMyMDIxfQ.fbIv-3T1Mvmq3lDmjqYouIa5ZKcVa9IxRRh8SsTLqp0",
 					"host": [
 						"127",
 						"0",
@@ -256,9 +261,17 @@
 						"api",
 						"password-reset",
 						"NjJjODFjMzM2ZTRhMTk0YzM0ZDgyYjdj",
-						"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYzgxYzMzNmU0YTE5NGMzNGQ4MmI3YyIsImlhdCI6MTY1NzI4MTc3MCwiZXhwIjoxNjU3NzEzNzcwfQ.efn0MinzzQZ-YGlpW2ssryj-yTlUFdPa6dx87cZ_-JM"
+						"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYzgxYzMzNmU0YTE5NGMzNGQ4MmI3YyIsImlhdCI6MTY1NzMwMDAyMSwiZXhwIjoxNjU3NzMyMDIxfQ.fbIv-3T1Mvmq3lDmjqYouIa5ZKcVa9IxRRh8SsTLqp0"
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "joi validation",
+			"request": {
+				"method": "GET",
+				"header": []
 			},
 			"response": []
 		}

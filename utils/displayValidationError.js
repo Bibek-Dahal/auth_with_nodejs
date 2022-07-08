@@ -1,5 +1,6 @@
-let validationErrors = {}
+
 const displayValidationError = (err)=>{
+    let validationErrors = {}
     err.forEach((item) => {
         validationErrors[item.context.key] = item.message
     });
