@@ -1,5 +1,5 @@
 import User from "../models/User.js"
-import Joi from "joi"
+
 class ProfileController{
     /*
         fetch user profile
@@ -21,25 +21,7 @@ class ProfileController{
         }
     }
 
-    static async updateProfile(req,res){
-        const schema = Joi.object({
-            username: Joi.string()
-                .alphanum()
-                .min(3)
-                .max(30)
-                .required(),
-            email: Joi.string()
-                .email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } }).required()
-        })
-            // .with('username', 'birth_year')
-            // .xor('password', 'access_token')
-            // .with('password', 'repeat_password');
-        
-        const {error,value} = schema.validate({})
-        res.send(error.details[0].message)
-        
-
-    }
+    
 }
 
 export default ProfileController

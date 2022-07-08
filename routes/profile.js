@@ -5,7 +5,7 @@ import authMiddleware from '../middlewares/authMiddleware.js'
 import User from '../models/User.js'
 
 router.get('',[authMiddleware,ProfileController.profile])
-router.put('/update',[ProfileController.updateProfile])
+
 
 
 export default router

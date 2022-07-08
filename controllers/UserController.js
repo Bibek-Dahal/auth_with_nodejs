@@ -16,9 +16,6 @@ class UserController{
         
         try{
             let user = User(req.body)
-            user.user_name = "bibek"
-            user.confirm_password = req.body.confirm_password
-            console.log(user)
             await user.save()
         
             const data = {
@@ -235,7 +232,7 @@ class UserController{
                     to: "bibekdahal479@gmail.com", // list of receivers
                     subject: "Password Reset Email", // Subject line
                     // text: `click on the link 127.0.0.1:8000/${encodedText}/${token} to reset your password`, // plain text body
-                    html: `<p>click on the link 127.0.0.1:8000/${encodedText}/${token} to reset your password</p>`, // html body
+                    html: `<p>click on the link 127.0.0.1:8000/api/password-reset/${encodedText}/${token} to reset your password</p>`, // html body
                     });
 
 
